@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        /*
+            var 没有块级作用域
+
+            let 有块级作用域
+
+            const 具有块级作用域，但是声明不可修改
+                使用场景：
+                    1. 对于常量可以使用 const 声明, 比如： 圆周率
+                    2. 对于对象和函数也可以使用常量声明，避免对象和函数意外的被修改
+        */
+
+        // {
+        //     let a = 10;      
+        // }
+
+        // console.log(a);
+
+
+        // for(let i = 0; i < 5; i++) {
+        //     console.log("循环内部 --> ");
+        // }
+
+        // console.log(i);
+
+        // 闭包解决没有块级作用域的问题
+        // (function() {
+        //     if(false) {
+        //         var a = 10;
+        //     }
+        // })()
+
+        // console.log(a);
+
+
+        // const c = 44;
+        // c = "a";
+
+        // console.log(c);
+
+        
+
+    </script>
+</body>
+
+</html>
